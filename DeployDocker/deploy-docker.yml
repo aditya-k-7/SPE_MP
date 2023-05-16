@@ -1,0 +1,12 @@
+---
+- name: Deploying in local machine
+  hosts: all
+  tasks:
+    - name: get the docker compose file
+      copy:
+        src: ./docker-compose.yml
+        dest: ./
+    - name: pull the images given in the docker-compose
+      command: docker-compose -f ./docker-compose.yml pull
+    - name: run the above docker images
+      command: docker-compose -f ./docker-compose.yml up -d

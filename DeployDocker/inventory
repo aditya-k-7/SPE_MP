@@ -1,2 +1,2 @@
 [aditya]
-<IP> ansible_user=local
+172.18.0.1 ansible_user=local

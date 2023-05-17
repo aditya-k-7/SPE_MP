@@ -19,6 +19,9 @@ const projects=new Schema({
 	'details':{
 		type:String
 	},
+	'qrimage':{
+		type:String
+	},
 	// qrimg:
     // {
     //     data: Buffer,
